@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA1067A71BC8C581007B9A9A /* Weblogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CA1067A61BC8C581007B9A9A /* Weblogo.png */; };
+		CA1067AB1BC8CB17007B9A9A /* WCProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1067AA1BC8CB17007B9A9A /* WCProductCell.m */; };
+		CA1067AD1BC8CD57007B9A9A /* WCProductNothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1067AC1BC8CD57007B9A9A /* WCProductNothingFoundCell.xib */; };
+		CA1067B01BC8CF75007B9A9A /* WCImageAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1067AF1BC8CF75007B9A9A /* WCImageAttribute.m */; };
+		CA10CCC71BD1FDD7003CDD7E /* WCProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA10CCC61BD1FDD7003CDD7E /* WCProductCell.xib */; };
+		CA4081551BCA1D90005C98F6 /* ProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4081541BCA1D90005C98F6 /* ProductDetailsViewController.m */; };
+		CA410FB31BF87B4A008E983A /* WCLineItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CA410FB21BF87B4A008E983A /* WCLineItem.m */; };
+		CA6AF82D1BC0138100C4F97D /* WCProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6AF82C1BC0138100C4F97D /* WCProduct.m */; };
+		CA6AF8301BC02F9000C4F97D /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6AF82F1BC02F9000C4F97D /* ProductViewController.m */; };
+		CA6AF8331BC1173100C4F97D /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6AF8321BC1173100C4F97D /* CategoryViewController.m */; };
+		CA711CA21BB7A26E00C0F3BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA711CA11BB7A26E00C0F3BC /* main.m */; };
+		CA711CA51BB7A26E00C0F3BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA711CA41BB7A26E00C0F3BC /* AppDelegate.m */; };
+		CA711CA81BB7A26E00C0F3BC /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA711CA71BB7A26E00C0F3BC /* HomeViewController.m */; settings = {COMPILER_FLAGS = "-Wno-unused"; }; };
+		CA711CAB1BB7A26E00C0F3BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA711CA91BB7A26E00C0F3BC /* Main.storyboard */; };
+		CA711CAD1BB7A26E00C0F3BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA711CAC1BB7A26E00C0F3BC /* Assets.xcassets */; };
+		CA711CB01BB7A26E00C0F3BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA711CAE1BB7A26E00C0F3BC /* LaunchScreen.storyboard */; };
+		CA819B0F1BBAC62B0051792E /* WCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CA819B0E1BBAC62B0051792E /* WCCategory.m */; };
+		CA819B121BBC288A0051792E /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = CA819B111BBC288A0051792E /* UIImage+Resize.m */; };
+		CA95A0161BEEF498006D320A /* WCUserOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = CA95A0151BEEF498006D320A /* WCUserOrder.m */; };
+		CA95A01A1BEEFDD0006D320A /* WCUserOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA95A0181BEEFDD0006D320A /* WCUserOrderCell.m */; };
+		CA95A01B1BEEFDD0006D320A /* WCUserOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA95A0191BEEFDD0006D320A /* WCUserOrderCell.xib */; };
+		CACE8B5B1BE5CAC9007EA48B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CACE8B5A1BE5CAC9007EA48B /* LoginViewController.m */; };
+		CACE8B5E1BE5E483007EA48B /* WCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CACE8B5D1BE5E483007EA48B /* WCUser.m */; };
+		CACE8D481BEDB00F007EA48B /* CustomerOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CACE8D471BEDB00F007EA48B /* CustomerOrdersViewController.m */; };
+		CAE69B2E1BE45DE1006FB7D9 /* ScrollViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE69B2D1BE45DE1006FB7D9 /* ScrollViewContainer.m */; };
+		CAE69B311BE46E03006FB7D9 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE69B301BE46E03006FB7D9 /* MeViewController.m */; };
+		CAEF80541C095BD200E290E1 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEF80531C095BD200E290E1 /* OrderDetailViewController.m */; };
+		CAEF80641C0A0DFE00E290E1 /* NSURLSessionDataTask+createDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEF80631C0A0DFE00E290E1 /* NSURLSessionDataTask+createDataTask.m */; };
+		CAF318F01C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF318EF1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m */; };
+		CAF318F31C05A3F50089B3D6 /* ButtonContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF318F21C05A3F50089B3D6 /* ButtonContainer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA1067A61BC8C581007B9A9A /* Weblogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Weblogo.png; path = SilverStoryClient/Weblogo.png; sourceTree = "<group>"; };
+		CA1067A91BC8CB17007B9A9A /* WCProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCProductCell.h; sourceTree = "<group>"; };
+		CA1067AA1BC8CB17007B9A9A /* WCProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCProductCell.m; sourceTree = "<group>"; };
+		CA1067AC1BC8CD57007B9A9A /* WCProductNothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCProductNothingFoundCell.xib; sourceTree = "<group>"; };
+		CA1067AE1BC8CF75007B9A9A /* WCImageAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCImageAttribute.h; sourceTree = "<group>"; };
+		CA1067AF1BC8CF75007B9A9A /* WCImageAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCImageAttribute.m; sourceTree = "<group>"; };
+		CA10CCC61BD1FDD7003CDD7E /* WCProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCProductCell.xib; sourceTree = "<group>"; };
+		CA4081531BCA1D90005C98F6 /* ProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailsViewController.h; sourceTree = "<group>"; };
+		CA4081541BCA1D90005C98F6 /* ProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ProductDetailsViewController.m; sourceTree = "<group>"; };
+		CA410FB11BF87B4A008E983A /* WCLineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLineItem.h; sourceTree = "<group>"; };
+		CA410FB21BF87B4A008E983A /* WCLineItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLineItem.m; sourceTree = "<group>"; };
+		CA6AF82B1BC0138100C4F97D /* WCProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCProduct.h; sourceTree = "<group>"; };
+		CA6AF82C1BC0138100C4F97D /* WCProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCProduct.m; sourceTree = "<group>"; };
+		CA6AF82E1BC02F9000C4F97D /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
+		CA6AF82F1BC02F9000C4F97D /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		CA6AF8311BC1173100C4F97D /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		CA6AF8321BC1173100C4F97D /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		CA711C9D1BB7A26E00C0F3BC /* SilverStoryClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilverStoryClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA711CA11BB7A26E00C0F3BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA711CA31BB7A26E00C0F3BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA711CA41BB7A26E00C0F3BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA711CA61BB7A26E00C0F3BC /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		CA711CA71BB7A26E00C0F3BC /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		CA711CAA1BB7A26E00C0F3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA711CAC1BB7A26E00C0F3BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA711CAF1BB7A26E00C0F3BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA711CB11BB7A26E00C0F3BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA819B0C1BBAAAFA0051792E /* SilverStoryClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SilverStoryClient-Prefix.pch"; sourceTree = "<group>"; };
+		CA819B0D1BBAC62B0051792E /* WCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCCategory.h; sourceTree = "<group>"; };
+		CA819B0E1BBAC62B0051792E /* WCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCCategory.m; sourceTree = "<group>"; };
+		CA819B101BBC288A0051792E /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "SilverStoryClient/UIImage+Resize.h"; sourceTree = "<group>"; };
+		CA819B111BBC288A0051792E /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "SilverStoryClient/UIImage+Resize.m"; sourceTree = "<group>"; };
+		CA95A0141BEEF498006D320A /* WCUserOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCUserOrder.h; sourceTree = "<group>"; };
+		CA95A0151BEEF498006D320A /* WCUserOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCUserOrder.m; sourceTree = "<group>"; };
+		CA95A0171BEEFDD0006D320A /* WCUserOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCUserOrderCell.h; sourceTree = "<group>"; };
+		CA95A0181BEEFDD0006D320A /* WCUserOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCUserOrderCell.m; sourceTree = "<group>"; };
+		CA95A0191BEEFDD0006D320A /* WCUserOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WCUserOrderCell.xib; sourceTree = "<group>"; };
+		CACE8B591BE5CAC9007EA48B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		CACE8B5A1BE5CAC9007EA48B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CACE8B5C1BE5E483007EA48B /* WCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCUser.h; sourceTree = "<group>"; };
+		CACE8B5D1BE5E483007EA48B /* WCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCUser.m; sourceTree = "<group>"; };
+		CACE8D461BEDB00F007EA48B /* CustomerOrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerOrdersViewController.h; sourceTree = "<group>"; };
+		CACE8D471BEDB00F007EA48B /* CustomerOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerOrdersViewController.m; sourceTree = "<group>"; };
+		CAE69B2C1BE45DE1006FB7D9 /* ScrollViewContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollViewContainer.h; path = SilverStoryClient/ScrollViewContainer.h; sourceTree = "<group>"; };
+		CAE69B2D1BE45DE1006FB7D9 /* ScrollViewContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollViewContainer.m; path = SilverStoryClient/ScrollViewContainer.m; sourceTree = "<group>"; };
+		CAE69B2F1BE46E03006FB7D9 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		CAE69B301BE46E03006FB7D9 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		CAEF80521C095BD200E290E1 /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
+		CAEF80531C095BD200E290E1 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+		CAEF80621C0A0DFE00E290E1 /* NSURLSessionDataTask+createDataTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionDataTask+createDataTask.h"; sourceTree = "<group>"; };
+		CAEF80631C0A0DFE00E290E1 /* NSURLSessionDataTask+createDataTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionDataTask+createDataTask.m"; sourceTree = "<group>"; };
+		CAF318EE1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+FixSeparator.h"; path = "SilverStoryClient/UITableViewCell+FixSeparator.h"; sourceTree = "<group>"; };
+		CAF318EF1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+FixSeparator.m"; path = "SilverStoryClient/UITableViewCell+FixSeparator.m"; sourceTree = "<group>"; };
+		CAF318F11C05A3F50089B3D6 /* ButtonContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonContainer.h; path = SilverStoryClient/ButtonContainer.h; sourceTree = "<group>"; };
+		CAF318F21C05A3F50089B3D6 /* ButtonContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonContainer.m; path = SilverStoryClient/ButtonContainer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA711C9A1BB7A26E00C0F3BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA1067A81BC8C58A007B9A9A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CA1067A61BC8C581007B9A9A /* Weblogo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		CA6AF8341BC17A1100C4F97D /* WooCommerce */ = {
+			isa = PBXGroup;
+			children = (
+				CA6AF82B1BC0138100C4F97D /* WCProduct.h */,
+				CA6AF82C1BC0138100C4F97D /* WCProduct.m */,
+				CA819B0D1BBAC62B0051792E /* WCCategory.h */,
+				CA819B0E1BBAC62B0051792E /* WCCategory.m */,
+				CA1067A91BC8CB17007B9A9A /* WCProductCell.h */,
+				CA1067AA1BC8CB17007B9A9A /* WCProductCell.m */,
+				CA10CCC61BD1FDD7003CDD7E /* WCProductCell.xib */,
+				CA1067AC1BC8CD57007B9A9A /* WCProductNothingFoundCell.xib */,
+				CA1067AE1BC8CF75007B9A9A /* WCImageAttribute.h */,
+				CA1067AF1BC8CF75007B9A9A /* WCImageAttribute.m */,
+				CACE8B5C1BE5E483007EA48B /* WCUser.h */,
+				CACE8B5D1BE5E483007EA48B /* WCUser.m */,
+				CA95A0141BEEF498006D320A /* WCUserOrder.h */,
+				CA95A0151BEEF498006D320A /* WCUserOrder.m */,
+				CA95A0171BEEFDD0006D320A /* WCUserOrderCell.h */,
+				CA95A0181BEEFDD0006D320A /* WCUserOrderCell.m */,
+				CA95A0191BEEFDD0006D320A /* WCUserOrderCell.xib */,
+				CA410FB11BF87B4A008E983A /* WCLineItem.h */,
+				CA410FB21BF87B4A008E983A /* WCLineItem.m */,
+			);
+			name = WooCommerce;
+			path = SilverStoryClient;
+			sourceTree = "<group>";
+		};
+		CA711C941BB7A26E00C0F3BC = {
+			isa = PBXGroup;
+			children = (
+				CAEF80551C09F16B00E290E1 /* NSURLSession */,
+				CAF318ED1C05A3530089B3D6 /* iOS Bug Fixes */,
+				CACE8B581BE5B9B8007EA48B /* Categories */,
+				CA1067A81BC8C58A007B9A9A /* Images */,
+				CA6AF8341BC17A1100C4F97D /* WooCommerce */,
+				CAE69B2B1BE45DB8006FB7D9 /* Custom Views */,
+				CA711C9F1BB7A26E00C0F3BC /* SilverStoryClient */,
+				CA711C9E1BB7A26E00C0F3BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA711C9E1BB7A26E00C0F3BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA711C9D1BB7A26E00C0F3BC /* SilverStoryClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA711C9F1BB7A26E00C0F3BC /* SilverStoryClient */ = {
+			isa = PBXGroup;
+			children = (
+				CA711CA31BB7A26E00C0F3BC /* AppDelegate.h */,
+				CA711CA41BB7A26E00C0F3BC /* AppDelegate.m */,
+				CA711CA61BB7A26E00C0F3BC /* HomeViewController.h */,
+				CA711CA71BB7A26E00C0F3BC /* HomeViewController.m */,
+				CA6AF8311BC1173100C4F97D /* CategoryViewController.h */,
+				CA6AF8321BC1173100C4F97D /* CategoryViewController.m */,
+				CA711CA91BB7A26E00C0F3BC /* Main.storyboard */,
+				CA711CAC1BB7A26E00C0F3BC /* Assets.xcassets */,
+				CA711CAE1BB7A26E00C0F3BC /* LaunchScreen.storyboard */,
+				CA6AF82E1BC02F9000C4F97D /* ProductViewController.h */,
+				CA6AF82F1BC02F9000C4F97D /* ProductViewController.m */,
+				CA4081531BCA1D90005C98F6 /* ProductDetailsViewController.h */,
+				CA4081541BCA1D90005C98F6 /* ProductDetailsViewController.m */,
+				CAE69B2F1BE46E03006FB7D9 /* MeViewController.h */,
+				CAE69B301BE46E03006FB7D9 /* MeViewController.m */,
+				CACE8B591BE5CAC9007EA48B /* LoginViewController.h */,
+				CACE8B5A1BE5CAC9007EA48B /* LoginViewController.m */,
+				CACE8D461BEDB00F007EA48B /* CustomerOrdersViewController.h */,
+				CACE8D471BEDB00F007EA48B /* CustomerOrdersViewController.m */,
+				CAEF80521C095BD200E290E1 /* OrderDetailViewController.h */,
+				CAEF80531C095BD200E290E1 /* OrderDetailViewController.m */,
+				CA711CA01BB7A26E00C0F3BC /* Supporting Files */,
+			);
+			path = SilverStoryClient;
+			sourceTree = "<group>";
+		};
+		CA711CA01BB7A26E00C0F3BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA711CB11BB7A26E00C0F3BC /* Info.plist */,
+				CA711CA11BB7A26E00C0F3BC /* main.m */,
+				CA819B0C1BBAAAFA0051792E /* SilverStoryClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CACE8B581BE5B9B8007EA48B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CA819B101BBC288A0051792E /* UIImage+Resize.h */,
+				CA819B111BBC288A0051792E /* UIImage+Resize.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		CAE69B2B1BE45DB8006FB7D9 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAF318F11C05A3F50089B3D6 /* ButtonContainer.h */,
+				CAF318F21C05A3F50089B3D6 /* ButtonContainer.m */,
+				CAE69B2C1BE45DE1006FB7D9 /* ScrollViewContainer.h */,
+				CAE69B2D1BE45DE1006FB7D9 /* ScrollViewContainer.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		CAEF80551C09F16B00E290E1 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				CAEF80621C0A0DFE00E290E1 /* NSURLSessionDataTask+createDataTask.h */,
+				CAEF80631C0A0DFE00E290E1 /* NSURLSessionDataTask+createDataTask.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		CAF318ED1C05A3530089B3D6 /* iOS Bug Fixes */ = {
+			isa = PBXGroup;
+			children = (
+				CAF318EE1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.h */,
+				CAF318EF1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m */,
+			);
+			name = "iOS Bug Fixes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA711C9C1BB7A26E00C0F3BC /* SilverStoryClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA711CB41BB7A26E00C0F3BC /* Build configuration list for PBXNativeTarget "SilverStoryClient" */;
+			buildPhases = (
+				CA711C991BB7A26E00C0F3BC /* Sources */,
+				CA711C9A1BB7A26E00C0F3BC /* Frameworks */,
+				CA711C9B1BB7A26E00C0F3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SilverStoryClient;
+			productName = SilverStoryClient;
+			productReference = CA711C9D1BB7A26E00C0F3BC /* SilverStoryClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA711C951BB7A26E00C0F3BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Tom and Jerry";
+				TargetAttributes = {
+					CA711C9C1BB7A26E00C0F3BC = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = EUX5R9PE3W;
+					};
+				};
+			};
+			buildConfigurationList = CA711C981BB7A26E00C0F3BC /* Build configuration list for PBXProject "SilverStoryClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA711C941BB7A26E00C0F3BC;
+			productRefGroup = CA711C9E1BB7A26E00C0F3BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA711C9C1BB7A26E00C0F3BC /* SilverStoryClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA711C9B1BB7A26E00C0F3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA711CB01BB7A26E00C0F3BC /* LaunchScreen.storyboard in Resources */,
+				CA1067A71BC8C581007B9A9A /* Weblogo.png in Resources */,
+				CA711CAD1BB7A26E00C0F3BC /* Assets.xcassets in Resources */,
+				CA10CCC71BD1FDD7003CDD7E /* WCProductCell.xib in Resources */,
+				CA95A01B1BEEFDD0006D320A /* WCUserOrderCell.xib in Resources */,
+				CA1067AD1BC8CD57007B9A9A /* WCProductNothingFoundCell.xib in Resources */,
+				CA711CAB1BB7A26E00C0F3BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA711C991BB7A26E00C0F3BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6AF8331BC1173100C4F97D /* CategoryViewController.m in Sources */,
+				CA1067AB1BC8CB17007B9A9A /* WCProductCell.m in Sources */,
+				CAE69B311BE46E03006FB7D9 /* MeViewController.m in Sources */,
+				CA95A01A1BEEFDD0006D320A /* WCUserOrderCell.m in Sources */,
+				CA819B0F1BBAC62B0051792E /* WCCategory.m in Sources */,
+				CAEF80641C0A0DFE00E290E1 /* NSURLSessionDataTask+createDataTask.m in Sources */,
+				CACE8B5E1BE5E483007EA48B /* WCUser.m in Sources */,
+				CACE8B5B1BE5CAC9007EA48B /* LoginViewController.m in Sources */,
+				CA711CA81BB7A26E00C0F3BC /* HomeViewController.m in Sources */,
+				CA410FB31BF87B4A008E983A /* WCLineItem.m in Sources */,
+				CAF318F31C05A3F50089B3D6 /* ButtonContainer.m in Sources */,
+				CA95A0161BEEF498006D320A /* WCUserOrder.m in Sources */,
+				CA6AF8301BC02F9000C4F97D /* ProductViewController.m in Sources */,
+				CA711CA51BB7A26E00C0F3BC /* AppDelegate.m in Sources */,
+				CA6AF82D1BC0138100C4F97D /* WCProduct.m in Sources */,
+				CAEF80541C095BD200E290E1 /* OrderDetailViewController.m in Sources */,
+				CA711CA21BB7A26E00C0F3BC /* main.m in Sources */,
+				CAF318F01C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m in Sources */,
+				CA4081551BCA1D90005C98F6 /* ProductDetailsViewController.m in Sources */,
+				CA1067B01BC8CF75007B9A9A /* WCImageAttribute.m in Sources */,
+				CACE8D481BEDB00F007EA48B /* CustomerOrdersViewController.m in Sources */,
+				CAE69B2E1BE45DE1006FB7D9 /* ScrollViewContainer.m in Sources */,
+				CA819B121BBC288A0051792E /* UIImage+Resize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA711CA91BB7A26E00C0F3BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA711CAA1BB7A26E00C0F3BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA711CAE1BB7A26E00C0F3BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA711CAF1BB7A26E00C0F3BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA711CB21BB7A26E00C0F3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA711CB31BB7A26E00C0F3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA711CB51BB7A26E00C0F3BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SilverStoryClient/SilverStoryClient-Prefix.pch";
+				INFOPLIST_FILE = SilverStoryClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomandjerry.SilverStoryClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CA711CB61BB7A26E00C0F3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SilverStoryClient/SilverStoryClient-Prefix.pch";
+				INFOPLIST_FILE = SilverStoryClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomandjerry.SilverStoryClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA711C981BB7A26E00C0F3BC /* Build configuration list for PBXProject "SilverStoryClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA711CB21BB7A26E00C0F3BC /* Debug */,
+				CA711CB31BB7A26E00C0F3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA711CB41BB7A26E00C0F3BC /* Build configuration list for PBXNativeTarget "SilverStoryClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA711CB51BB7A26E00C0F3BC /* Debug */,
+				CA711CB61BB7A26E00C0F3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA711C951BB7A26E00C0F3BC /* Project object */;
+}

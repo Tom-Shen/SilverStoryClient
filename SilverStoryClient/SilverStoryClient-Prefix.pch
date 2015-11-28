@@ -1,0 +1,34 @@
+//
+//  SilverStoryClient-Prefix.pch
+//  SilverStoryClient
+//
+//  Created by Tom Shen on 9/29/15.
+//  Copyright © 2015 Tom and Jerry. All rights reserved.
+//
+
+#ifndef SilverStoryClient_Prefix_pch
+#define SilverStoryClient_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+// Client URL is the URL for locating wordpress client.
+// Client URL May Change, if updated, simply change the string below.
+#define CLIENT_URL @"http://127.0.0.1:8080/wordpress/index.php"
+
+// Client URL for getting Category.
+#define CATEGORY_CLIENT_URL @"/wc-api/v3/products/categories"
+
+#define PRODUCT_CLIENT_URL @"/wc-api/v3/products"
+
+// We need to get the real consumer key before publishing.
+#define CLIENT_CONSUMERS_KEY @"ck_36054cff55dd0645ae1585ac1590eb3e871733a8"
+
+#define PASSWORD_CHECK_CLIENT_URL @"http://127.0.0.1:8080/wordpress/user-login/verify-login.php"
+
+#define USER_CLIENT_URL(ID) [NSString stringWithFormat:@"/wc-api/v3/customers/%ld", ID]
+
+#endif /* SilverStoryClient_Prefix_pch */
