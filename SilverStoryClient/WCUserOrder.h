@@ -28,4 +28,6 @@
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
+- (NSString *)statusToDisplay;
+
 @end

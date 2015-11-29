@@ -26,4 +26,24 @@
     return self;
 }
 
+- (NSString *)statusToDisplay {
+    if ([self.status isEqualToString:@"pending"]) {
+        return @"Pending";
+    } else if ([self.status isEqualToString:@"processing"]) {
+        return @"Processing";
+    } else if ([self.status isEqualToString:@"on-hold"]) {
+        return @"On Hold";
+    } else if ([self.status isEqualToString:@"completed"]) {
+        return @"Completed";
+    } else if ([self.status isEqualToString:@"cancelled"]) {
+        return @"Cancelled";
+    } else if ([self.status isEqualToString:@"refunded"]) {
+        return @"Refunded";
+    } else if ([self.status isEqualToString:@"failed"]) {
+        return @"Failed";
+    } else {
+        return self.status;
+    }
+}
+
 @end

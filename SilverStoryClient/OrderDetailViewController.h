@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "WCUserOrder.h"
+
 @class OrderDetailViewController;
 
 @protocol OrderDetailViewControllerDelegate <NSObject>
@@ -19,5 +21,7 @@
 @interface OrderDetailViewController : UITableViewController
 
 @property (nonatomic, weak) id <OrderDetailViewControllerDelegate> delegate;
+
+@property (nonatomic, strong) WCUserOrder *inputOrder;
 
 @end

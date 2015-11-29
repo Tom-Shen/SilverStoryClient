@@ -35,7 +35,6 @@
 		CAE69B311BE46E03006FB7D9 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE69B301BE46E03006FB7D9 /* MeViewController.m */; };
 		CAEF80541C095BD200E290E1 /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEF80531C095BD200E290E1 /* OrderDetailViewController.m */; };
 		CAEF80671C0A111B00E290E1 /* NSURLSessionDataTask+createDataTask.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEF80661C0A111B00E290E1 /* NSURLSessionDataTask+createDataTask.m */; };
-		CAF318F01C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF318EF1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m */; };
 		CAF318F31C05A3F50089B3D6 /* ButtonContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF318F21C05A3F50089B3D6 /* ButtonContainer.m */; };
 /* End PBXBuildFile section */
 
@@ -91,8 +90,6 @@
 		CAEF80531C095BD200E290E1 /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
 		CAEF80651C0A111B00E290E1 /* NSURLSessionDataTask+createDataTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLSessionDataTask+createDataTask.h"; path = "SilverStoryClient/NSURLSessionDataTask+createDataTask.h"; sourceTree = "<group>"; };
 		CAEF80661C0A111B00E290E1 /* NSURLSessionDataTask+createDataTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLSessionDataTask+createDataTask.m"; path = "SilverStoryClient/NSURLSessionDataTask+createDataTask.m"; sourceTree = "<group>"; };
-		CAF318EE1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+FixSeparator.h"; path = "SilverStoryClient/UITableViewCell+FixSeparator.h"; sourceTree = "<group>"; };
-		CAF318EF1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+FixSeparator.m"; path = "SilverStoryClient/UITableViewCell+FixSeparator.m"; sourceTree = "<group>"; };
 		CAF318F11C05A3F50089B3D6 /* ButtonContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonContainer.h; path = SilverStoryClient/ButtonContainer.h; sourceTree = "<group>"; };
 		CAF318F21C05A3F50089B3D6 /* ButtonContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonContainer.m; path = SilverStoryClient/ButtonContainer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				CAEF80551C09F16B00E290E1 /* NSURLSession */,
-				CAF318ED1C05A3530089B3D6 /* iOS Bug Fixes */,
 				CACE8B581BE5B9B8007EA48B /* Categories */,
 				CA1067A81BC8C58A007B9A9A /* Images */,
 				CA6AF8341BC17A1100C4F97D /* WooCommerce */,
@@ -231,15 +227,6 @@
 				CAEF80661C0A111B00E290E1 /* NSURLSessionDataTask+createDataTask.m */,
 			);
 			name = NSURLSession;
-			sourceTree = "<group>";
-		};
-		CAF318ED1C05A3530089B3D6 /* iOS Bug Fixes */ = {
-			isa = PBXGroup;
-			children = (
-				CAF318EE1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.h */,
-				CAF318EF1C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m */,
-			);
-			name = "iOS Bug Fixes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +321,6 @@
 				CA6AF82D1BC0138100C4F97D /* WCProduct.m in Sources */,
 				CAEF80541C095BD200E290E1 /* OrderDetailViewController.m in Sources */,
 				CA711CA21BB7A26E00C0F3BC /* main.m in Sources */,
-				CAF318F01C05A3CC0089B3D6 /* UITableViewCell+FixSeparator.m in Sources */,
 				CA4081551BCA1D90005C98F6 /* ProductDetailsViewController.m in Sources */,
 				CA1067B01BC8CF75007B9A9A /* WCImageAttribute.m in Sources */,
 				CACE8D481BEDB00F007EA48B /* CustomerOrdersViewController.m in Sources */,

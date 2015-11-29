@@ -14,8 +14,6 @@
 
 #import "ProductViewController.h"
 
-#import "UITableViewCell+FixSeparator.h"
-
 #import "NSURLSessionDataTask+createDataTask.h"
 
 @interface CategoryViewController ()

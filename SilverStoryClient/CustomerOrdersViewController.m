@@ -125,26 +125,6 @@
     return [formatter stringFromNumber:price];
 }
 
-- (NSString *)statusToDisplay:(NSString *)status {
-    if ([status isEqualToString:@"pending"]) {
-        return @"Pending";
-    } else if ([status isEqualToString:@"processing"]) {
-        return @"Processing";
-    } else if ([status isEqualToString:@"on-hold"]) {
-        return @"On Hold";
-    } else if ([status isEqualToString:@"completed"]) {
-        return @"Completed";
-    } else if ([status isEqualToString:@"cancelled"]) {
-        return @"Cancelled";
-    } else if ([status isEqualToString:@"refunded"]) {
-        return @"Refunded";
-    } else if ([status isEqualToString:@"failed"]) {
-        return @"Failed";
-    } else {
-        return status;
-    }
-}
-
 - (IBAction)close:(id)sender {
     [self.delegate customerOrderViewControllerDidCancel:self];
 }
@@ -170,7 +150,7 @@
     
     orderCell.discountLabel.text = [NSString stringWithFormat:@"Discount:%@", order.totalDiscount];
     orderCell.totalTaxLabel.text = [NSString stringWithFormat:@"Tax:%@", order.totalTax];
-    orderCell.statusLabel.text = [self statusToDisplay:order.status];
+    orderCell.statusLabel.text = [order statusToDisplay];
     orderCell.orderIDLabel.text = [NSString stringWithFormat:@"ID %@", order.orderID];
     
     NSString *formattedPrice = [self formatPrice:[NSNumber numberWithFloat:order.totalPrice.intValue] currencyCode:order.currencyCode];
@@ -180,7 +160,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    [self performSegueWithIdentifier:@"ShowOrderDetail" sender:tableView];
+    [self performSegueWithIdentifier:@"ShowOrderDetail" sender:indexPath];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -188,6 +168,11 @@
         UINavigationController *navController = segue.destinationViewController;
         OrderDetailViewController *controller = (OrderDetailViewController *)navController.topViewController;
         controller.delegate = self;
+        
+        NSIndexPath *indexPath = (NSIndexPath *)sender;
+        WCUserOrder *order = allOrders[indexPath.row];
+        
+        controller.inputOrder = order;
     }
 }
 
