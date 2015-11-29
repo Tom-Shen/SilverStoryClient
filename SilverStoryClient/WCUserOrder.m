@@ -22,6 +22,8 @@
         self.totalLineItemsQuantity = dictionary[@"total_line_items_quantity"];
         self.orderID = dictionary[@"id"];
         self.currencyCode = dictionary[@"currency"];
+        self.viewOrderURL = dictionary[@"view_order_url"];
+        self.createdDate = dictionary[@"created_at"];
     }
     return self;
 }

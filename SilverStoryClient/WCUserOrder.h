@@ -26,6 +26,10 @@
 
 @property (nonatomic, strong) NSString *currencyCode;
 
+@property (nonatomic, strong) NSString *viewOrderURL;
+
+@property (nonatomic, strong) NSString *createdDate;
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 - (NSString *)statusToDisplay;

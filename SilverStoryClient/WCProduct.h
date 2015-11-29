@@ -30,10 +30,6 @@ static NSString * const WCProductImageArrayDidFinishNotification = @"com.tomandj
 
 @property (nonatomic, strong) NSString *productStatus;
 
-@property (nonatomic, strong) NSNumber *productDownloadable;
-
-@property (nonatomic, strong) NSNumber *productVirtual;
-
 @property (nonatomic, strong) NSString *productParmalink;
 
 @property (nonatomic, strong) NSString *productSKU; // Required
@@ -56,19 +52,9 @@ static NSString * const WCProductImageArrayDidFinishNotification = @"com.tomandj
 
 @property (nonatomic, strong) NSString *productTaxClass;
 
-@property (nonatomic, strong) NSNumber *productManagingStock;
-
 @property (nonatomic, strong) NSNumber *productStockQuantity;
 
 @property (nonatomic, strong) NSNumber *productInStock;
-
-@property (nonatomic, strong) NSNumber *productBackordersAllowed;
-
-@property (nonatomic, strong) NSNumber *productBackordered;
-
-@property (nonatomic, strong) NSNumber *productBackorders; // Needs to Check
-
-@property (nonatomic, strong) NSNumber *productSoldIndividually;
 
 @property (nonatomic, strong) NSNumber *productPurchasable;
 
@@ -108,10 +94,6 @@ static NSString * const WCProductImageArrayDidFinishNotification = @"com.tomandj
 
 @property (nonatomic, strong) NSArray *productRelatedIDs;
 
-@property (nonatomic, strong) NSArray *productUpsellIDs;
-
-@property (nonatomic, strong) NSArray *productCrossSellIDs;
-
 @property (nonatomic, strong) NSNumber *productParentID;
 
 @property (nonatomic, strong) NSArray *productCategories; // Required
@@ -140,11 +122,7 @@ static NSString * const WCProductImageArrayDidFinishNotification = @"com.tomandj
 
 @property (nonatomic, strong) NSArray *productVariations;
 
-@property (nonatomic, strong) NSArray *productParent;
-
 @property (nonatomic, strong) NSString *productURL;
-
-@property (nonatomic, strong) NSString *productButtonText;
 
 @property (nonatomic, strong) NSString *productImageURL;
 

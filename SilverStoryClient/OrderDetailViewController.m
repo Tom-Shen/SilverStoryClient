@@ -9,6 +9,7 @@
 #import "OrderDetailViewController.h"
 
 @interface OrderDetailViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *createdDateLabel;
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;
 @property (strong, nonatomic) IBOutlet UILabel *orderIDLabel;
 @end
@@ -20,6 +21,7 @@
     
     self.orderIDLabel.text = self.inputOrder.orderID.stringValue;
     self.statusLabel.text = [self.inputOrder statusToDisplay];
+    self.createdDateLabel.text = self.inputOrder.createdDate;
 }
 
 - (IBAction)close:(id)sender {
@@ -41,6 +43,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 7 && indexPath.row == 0) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.inputOrder.viewOrderURL]];
+        
+        NSLog(@"%@", self.inputOrder.viewOrderURL);
+    }
 }
 
 @end
