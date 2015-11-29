@@ -108,7 +108,7 @@
         return;
     }
     
-    NSLog(@"Orders : %@", orders);
+    // NSLog(@"Orders : %@", orders);
     
     for (NSDictionary *orderDict in orders) {
         WCUserOrder *userOrder = [[WCUserOrder alloc] initWithDictionary:orderDict];

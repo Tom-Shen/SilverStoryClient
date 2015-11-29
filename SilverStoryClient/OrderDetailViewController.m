@@ -22,9 +22,30 @@
     
     self.orderIDLabel.text = self.inputOrder.orderID.stringValue;
     self.statusLabel.text = [self.inputOrder statusToDisplay];
-    self.createdDateLabel.text = self.inputOrder.createdDate;
     
     self.subtotalLabel.text = [self.inputOrder formatSubtotal];
+    
+    NSDate *createdDate = [self formatDateString:self.inputOrder.createdDate];
+    self.createdDateLabel.text = [self formatDate:createdDate];
+}
+
+- (NSDate *)formatDateString:(NSString *)string {
+    static NSDateFormatter *formatter = nil;
+    if (formatter == nil) {
+        formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+    }
+    return [formatter dateFromString:string];
+}
+
+- (NSString *)formatDate:(NSDate *)date {
+    static NSDateFormatter *formatter = nil;
+    if (formatter == nil) {
+        formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateStyle:NSDateFormatterMediumStyle];
+        [formatter setTimeStyle:NSDateFormatterMediumStyle];
+    }
+    return [formatter stringFromDate:date];
 }
 
 - (IBAction)close:(id)sender {
