@@ -30,8 +30,12 @@
 
 @property (nonatomic, strong) NSString *createdDate;
 
+@property (nonatomic, strong) NSDecimalNumber *subtotal;
+
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 - (NSString *)statusToDisplay;
+
+- (NSString *)formatSubtotal;
 
 @end

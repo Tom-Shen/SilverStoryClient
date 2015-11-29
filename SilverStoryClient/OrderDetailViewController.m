@@ -9,6 +9,7 @@
 #import "OrderDetailViewController.h"
 
 @interface OrderDetailViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *subtotalLabel;
 @property (strong, nonatomic) IBOutlet UILabel *createdDateLabel;
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;
 @property (strong, nonatomic) IBOutlet UILabel *orderIDLabel;
@@ -22,6 +23,8 @@
     self.orderIDLabel.text = self.inputOrder.orderID.stringValue;
     self.statusLabel.text = [self.inputOrder statusToDisplay];
     self.createdDateLabel.text = self.inputOrder.createdDate;
+    
+    self.subtotalLabel.text = [self.inputOrder formatSubtotal];
 }
 
 - (IBAction)close:(id)sender {

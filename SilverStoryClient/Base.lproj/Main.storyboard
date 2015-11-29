@@ -1393,6 +1393,7 @@
                         <outlet property="createdDateLabel" destination="Nse-SN-s3U" id="x8H-Y6-nVt"/>
                         <outlet property="orderIDLabel" destination="UH8-yV-CFY" id="Buv-oN-C9X"/>
                         <outlet property="statusLabel" destination="c8R-EX-yq8" id="GN1-75-d2e"/>
+                        <outlet property="subtotalLabel" destination="dUF-2z-1pf" id="CsJ-DA-Edf"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evw-tt-0hc" userLabel="First Responder" sceneMemberID="firstResponder"/>

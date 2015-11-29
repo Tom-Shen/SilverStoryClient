@@ -24,6 +24,7 @@
         self.currencyCode = dictionary[@"currency"];
         self.viewOrderURL = dictionary[@"view_order_url"];
         self.createdDate = dictionary[@"created_at"];
+        self.subtotal = dictionary[@"subtotal"];
     }
     return self;
 }
@@ -46,6 +47,14 @@
     } else {
         return self.status;
     }
+}
+
+- (NSString *)formatSubtotal {
+    NSDecimalNumber *price = [NSDecimalNumber decimalNumberWithString:(NSString *)self.subtotal];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+    [formatter setCurrencyCode:self.currencyCode];
+    return [formatter stringFromNumber:price];
 }
 
 @end
